@@ -1,12 +1,23 @@
+"use client";
 import React from "react";
 import CommonButton from "@/Components/Shared/CummonButton/CommonButton";
 import imgStar from "@/Assets/Icons/Star.svg";
 import Image from "next/image";
 import cartBtn from "@/Assets/Icons/cartBtn.svg";
 import heartBtn from "@/Assets/Icons/HeartBtn.svg";
+import { motion } from "framer-motion";
 const InfoProduct = ({}) => {
   return (
-    <div className={"w-[540px]"}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.2,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className={"w-[540px]"}
+    >
       <div className={"text-6xl mb-8 font-bold"}>Urbano jackets</div>
       <div className={"flex items-align w-[192px] justify-between mb-6"}>
         <Image src={imgStar} alt={"rating"} />
@@ -48,7 +59,7 @@ const InfoProduct = ({}) => {
           variant={"filled"}
         ></CommonButton>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

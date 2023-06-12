@@ -5,8 +5,15 @@ const Reviews = () => {
   return (
     <>
       <ul>
+        {Array.of(3).map((d, index) => {
+          return (
+            <li key={index}>
+              <ReviewsItem commentText={"dsadasd"} img={"dasd"} date={"dsd"} />
+            </li>
+          );
+        })}
         <li>
-          <ReviewsItem />
+          <ReviewsItem commentText={"dsadasd"} img={"dasd"} date={"dsd"} />
         </li>
       </ul>
     </>

@@ -7,14 +7,17 @@ import shippingBus from "@/Assets/Icons/Truck Delivery.svg";
 //style
 import style from "./header.module.scss";
 import HeaderBottom from "@/Components/Header/Header_bottom";
+import Link from "next/link";
 const Header = () => {
   return (
-    <div style={{ background: "#F4F7F8" }}>
+    <header style={{ background: "#F4F7F8" }}>
       <Container>
         <div className={style.header__container}>
           <div className={style.header}>
             <div>
-              <h2 className={style.header__logo}>Dealerz.</h2>
+              <h2 className={style.header__logo}>
+                <Link href={"/"}>Dealerz.</Link>
+              </h2>
             </div>
             <div className={style.header__right}>
               <div className={style.header__right__item}>
@@ -30,7 +33,7 @@ const Header = () => {
           <HeaderBottom />
         </div>
       </Container>
-    </div>
+    </header>
   );
 };
 
