@@ -1,0 +1,80 @@
+@import "../../../../../untitled3/src/styles/variables";
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1168px;
+  width: 100%;
+  padding: 63px 150px 53px 72px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 9px;
+
+  &__img-box{
+    border-radius: 9px;
+    background: #E2E2EA;
+    &__img{
+      border-radius: 9px;
+    }
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  &__name{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: $primary50;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 510px;
+    width: 100%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+    margin-bottom: 41px;
+  }
+
+  &__name-user{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+  }
+
+
+}
+
+.section{
+  background: $section-bg-color;
+  padding: 130px 0;
+}
+
+.arrow{
+  &__right{
+    position: absolute;
+    right: 26px;
+    top: 42%;
+    z-index: 1;
+    cursor: pointer;
+  }
+  &__left{
+    position: absolute;
+    left: 26px;
+    top: 42%;
+    z-index: 1;
+    cursor: pointer;
+  }
+}

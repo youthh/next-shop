@@ -1,0 +1,40 @@
+@import "../../../../../untitled3/src/styles/variables";
+.button{
+  left: 728px;
+  top: 622px;
+  background: $primary-color;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  padding: 18px 24px;
+  color: #fff;
+  width: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in-out;
+  will-change: transform;
+  outline: none;
+  cursor: pointer;
+
+  &:hover{
+
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  }
+  &__filled{
+    background: $primary-color;
+
+  }
+  &__outlined{
+    background: none;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+}
+
+

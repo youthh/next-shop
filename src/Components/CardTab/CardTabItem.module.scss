@@ -1,0 +1,41 @@
+@import "./src/styles/variables";
+.card{
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  &__name{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: $title-fontcolor;
+    letter-spacing: 0.005em;
+    margin-bottom: 32px;
+  }
+
+  &__category{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+  }
+
+  &__btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary50;
+    border-radius: 100%;
+    transition: .3s ease-in-out;
+    &:hover{
+      transform: translateY(-1.4px);
+    }
+  }
+}

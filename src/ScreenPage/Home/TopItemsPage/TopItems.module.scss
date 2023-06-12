@@ -1,0 +1,128 @@
+@import "../../../../../untitled3/src/styles/variables";
+.header{
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+
+    text-align: center;
+    letter-spacing: 0.005em;
+    max-width: 732px;
+    width: 100%;
+    margin: 0 auto 70px auto;
+    color: #515151;
+
+  }
+}
+
+.section{
+  padding: 80px 0;
+}
+
+
+.slick-dots {
+  li {
+    button {
+      &::before {
+        color: #E0E0E0 !important;
+        font-size: 16px !important;
+        opacity: 1 !important;
+      }
+    }
+
+    &.slick-active{
+      button {
+        &::before {
+          color: #7A6005 !important;
+        }
+      }
+    }
+  }
+}
+
+.carousel{
+  div{
+    div{
+      div{
+        width: unset !important;
+      }
+    }
+  }
+}
+
+
+.card{
+  margin-right: 16px;
+  max-width: 400px;
+  width: 100% !important;
+  border-radius: 6px;
+  position: relative;
+
+  &__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__category{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.008em;
+    color: #9A9AB0;
+
+  }
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+    text-decoration: line-through;
+    &__sale{
+      color: $primary-color;
+      margin-right: 10px;
+    }
+  }
+
+  &__name{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #11142D;
+
+  }
+  &__sale{
+    display: flex;
+    padding: 3px 5px;
+    align-items: center;
+    justify-content: center;
+    background: #E2E2EA;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    text-transform: uppercase;
+    letter-spacing: 0.008em;
+    height: 19px;
+    width: 39px;
+    color: $primary-color;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+}
+

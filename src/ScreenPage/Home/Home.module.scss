@@ -1,0 +1,31 @@
+@import "../../../../untitled3/src/styles/variables";
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 220px;
+  &__img{
+    user-select: none;
+  }
+
+  &__title{
+    max-width: 593px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    color: $title-fontcolor;
+    margin-bottom: 32px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: $title-text-color;
+    letter-spacing: 0.005em;
+    margin-bottom: 50px;
+  }
+}

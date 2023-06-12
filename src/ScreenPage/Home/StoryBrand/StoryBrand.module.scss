@@ -1,0 +1,47 @@
+@import "../../../../../untitled3/src/styles/variables";
+.section{
+  background: $section-bg-color;
+  padding: 130px 0;
+}
+
+.story{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    max-width: 479px;
+    width: 100%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 504px;
+    letter-spacing: 0.005em;
+
+    margin: 32px 0 50px 0;
+    color: #9A9AB0;
+
+  }
+
+  &__link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $primary50;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}

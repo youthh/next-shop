@@ -1,0 +1,46 @@
+.tabTitle{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #9A9AB0;
+  margin-right: 40px;
+  &:last-child{
+    margin-right: 0;
+  }
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &__active{
+    color: #36B2F8;
+    position: relative;
+    transition: all .3s ease-in-out;
+    &::after{
+      transition: all .3s ease-in-out;
+      content: '';
+      position: absolute;
+      height: 3px;
+      border-radius: 9px;
+      background:#36B2F8;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+
+    }
+  }
+}
+
+.tabContentBox{
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.tabContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}

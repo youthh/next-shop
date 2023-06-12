@@ -1,0 +1,26 @@
+.box {
+  border: 1px solid transparent;
+  width: 573px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  padding: 19px 30px;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.4s ease-in-out;
+
+  // Define styles for the input element when it's a child of the div element
+  &__input {
+    border: none;
+    padding: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+
+  // Define styles for the div element when the input element is hovered or focused
+  &:hover, &:focus-within {
+    box-shadow: 0 0 2px rgba(0,0,0,.4);
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../../../untitled3/src/styles/variables";
+.section{
+  background: $section-bg-color;
+  padding: 170px 0;
+}
+
+.container{
+  &__logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
