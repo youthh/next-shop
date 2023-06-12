@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "@/Components/Container/Container";
 import Image from "next/image";
-import imgMap from "../../../../untitled3/src/Assets/Images/mapFooter.png";
+import imgMap from "@/Assets/Images/mapFooter.png";
 import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
